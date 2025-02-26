@@ -46,6 +46,48 @@
                 border: 20px groove red;
              }
 
+             .box8{
+               border : 20px green ridge;
+             }
+
+             .box9{
+               border: inset 20px orange;
+             }
+
+             .box10{
+               border: 20px outset #e6e6fa;
+             }
+
+             .div1{
+               border: 20px solid #f00;
+
+             }
+
+             .div2{
+               border: 20px solid #0f0;
+               width: 200px;
+               height: 100px;
+             }
+
+             /* 테두리별로 두께와 스타일을 다르게 주는것도 가능하다.
+             border - 로 시작한다.
+             위: top
+             아래: bottom
+             오른쪽: right
+             왼쪽 : left */
+
+             .div3{
+               border-top : 10px solid green;
+               border-bottom  : 10px solid blue;
+               border-left : 10px solid red;
+               border-right  : 10px solid yellow;
+             }
+             /* inline 속성을 가지는 태그들이 차지하는 영역은 내용(content) 만큼이다. */
+             span{
+               border : 5px solid #aaf;
+               width : 500px;
+               height : 100px;
+             }
     </style>
 </head>
 <body>
@@ -61,8 +103,12 @@
       <p class="box9">border테스트 중9</p>
       <p class="box10">border테스트 중10</p>
       
+      <div class="div1">div에 테두리 주기</div>
+      <div class="div2">div에 테두리 주기</div>
+      <div class="div3">div에 테두리 주기</div>
 
-
+      <span>hi</span>
+      <span>hello</span>
 
 </body>
 </html>
