@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //농구공이 23개가있다
+    //하나의 박스에 4개씩 들어갈 수 있다
+    // 총 필요한 박스의 개수를 구하세요
+
+    let bascketball = 23;
+    let eachbox = 4
+
+    let requiredbox = 0;
+
+    bascketball % eachbox == 0 ? requiredbox = bascketball/eachbox : requiredbox = bascketball/eachbox+1 ;
+    document.write("박스의 개수 : " ,requiredbox , "<br>");
+
+
+    
+    
+    let width = 10;
+    let height = 5;
+    let area = width * height;
+    let round = (width + height) * 2;
+
+    document.write("면적 :" ,area, " 둘레 : ", round, "<br>");
+
+
+    let number1 = 80;
+    let number2 = 95;
+    let number3 = 75;
+
+    let sum = number1+number2+number3;
+    let avg = sum /3;
+
+    document.write("총합 : " ,sum," 평균 : ", avg , "<br>");
+
+    let hour = 24;
+    let minute = 60;
+    let second = 60;
+    let dayIntoSecond = second*minute*hour;
+
+    document.write(" 하루 총 시간 : " ,dayIntoSecond, "<br>");
+    
+    let tem1 = 25;
+    let tem2 = tem1*1.8+32;
+
+    document.write("화씨 = " , tem2, "<br>");
+
+
+    // 윤년구하기
+    let year = 1000;
+
+    if(year  %4 == 0 && year % 100 != 0 || year % 400 == 0){
+        document.write(year ,"년은 윤년입니다.");
+    }
+    else{
+        document.write(year ,"년은 윤년이 아닙니다." ,"<br>");
+    }
+    
+    for(let i = 1; i<=9; i++){
+        for(let j = 1; j<=9; j++){
+            document.write(" <br>");
+            document.write( i, "*", j, "= " , i*j,);
+        }
+        document.write(" <br>");
+    }
+
+</script>
+<body>
+    
+</body>
+</html>
