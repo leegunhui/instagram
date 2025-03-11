@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded",(e) => {
             let _summary = summary.querySelector("input").value;
             let _profileDetail = profileDetail.querySelector("input").value;
 
-            userInfo.innerHTML = _userInfo
+            userInfo.innerHTML = _userInfo+"<br>";
             summary.innerHTML = _summary
 
             if(_profileDetail.startsWith("https")){
@@ -42,12 +42,13 @@ document.addEventListener("DOMContentLoaded",(e) => {
         } else {
             //현재 프로필에 있는 값을 변수에 담아놓는다.
             let _userInfo = userInfo.textContent
+            console.log(_userInfo);
             let _summary = summary.textContent
             let _profileDetail = profileDetail.textContent
 
             //textContent : 문자열만들어감(태그도 문자열 취급)
             //innerHTML : 태그는 태그로 작동한다.
-            userInfo.innerHTML = "<input value="+_userInfo+">"
+            userInfo.innerHTML = `<input value= ${_userInfo}>`
             summary.innerHTML = "<input value="+_summary+">"
             profileDetail.innerHTML = "<input value="+_profileDetail+">"
 
@@ -55,18 +56,21 @@ document.addEventListener("DOMContentLoaded",(e) => {
             changing = true;
         }
     })
-    
+
     //프로필사진 바꾸기
-    let profile_pic = document.querySelector("profile_pic .circle_pic") 
+    let profile_pic = document.querySelector("#profile_pic .circle_pic")
 
-    profile_pic.addEventListener("mouseover" , (e) =>{
-        e.target.style.filter = "grayscale(50%)";
-    })
-    
-    profile_pic.addEventListener("click" , (e) =>{
-        profile_pic.setAttribute("src" , prompt("이미지 url을 입력해주세요."));
+    profile_pic.addEventListener("mouseover",(e) => {
+        e.target.style.filter = "grayscale(70%)";
     })
 
+    profile_pic.addEventListener("mouseleave",(e) => {
+        e.target.style.filter = "grayscale(0%)";
+    })
+
+    profile_pic.addEventListener("click",(e) => {
+        profile_pic.setAttribute("src",prompt("이미지 url을 입력해주세요"));
+    })
 
 
 

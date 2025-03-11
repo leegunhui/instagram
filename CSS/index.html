@@ -14,7 +14,7 @@
     <body><!-- HTML문서에서 실질적으로 보이는 영역을 정의하는 구간 이미지, 글, 링크, 테이블, 동영상 등등 -->
         <!-- 코드 작성시 엔터를 눌러 줄바꿈을 시도했음에도 불구하고 실행화면에는 한줄로 연결된 채 나온다. -->
          <div id="top">
-            <img src="image/instagramlogo.png" width="150px">
+            <img src="image/instagramlogo.png">
             <input value="검색">
             <div>
                 <i class="fa-solid fa-house"></i>
@@ -30,7 +30,8 @@
             </div>
 
             <div id="profile_info">
-                <div id="id"><span>half_bottle</span>
+                <div id="id">
+                    <span>half_bottle</span>
                     <i class="fa-solid fa-gear"></i>
                 </div>
                 <button>프로필 편집</button>
@@ -39,12 +40,12 @@
 
         <div>
             <p>
-                <strong id = "userInfo">
+                <strong id="userInfo">
                     반병현(Bynghyun Ban)<br>
                 </strong>
                 <span id="summary">작가</span><br>
             </p>
-            <p> 
+            <p id="profileDetail"> 
                 <a href="https://needleworm.github.io">needleworm.github.io</a>
             </p>
         </div>
@@ -104,10 +105,6 @@
         </div>
 
         <div>
-            <!-- 부모 너비의 32%값이 지정이된다.
-             퍼센트로 지정된 값은 화면 크기에 따라 유동적으로 바뀐다.
-             창 크기의 변화에 맞춰 그때그때 화면의 정보나 크기가 함께
-             바뀌는 웹 페이지를 반응형 웹이라고 한다. -->
             <div class="thumbnail_grid">
                 <img src="image/1.jpg" class="thumbnail">
                 <img src="image/2.jpg" class="thumbnail">
