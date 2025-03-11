@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arr = [43,'hello', {name:'홍길동' , age:30}];
+
+        
+        document.write('${arr[2].name}<br>')
+
+        let user = {
+            name : "Alice",
+            hobbies : ["독서","여행" , "요리"],
+            address:{
+                city : "서울",
+                country : "대한민국"
+            }
+        }
+
+        //1. hobbies의 첫번째 요소를 출력하기
+        //2. address 에서 country값 출력하기
+
+        document.write('${user.hobbies[0]}<br>');
+        document.write('${user.address.country}<br>');
+
+        //ES6에서 도입된 구조분해할당
+        //배열이나 객체의 개별 요소들을 변수에 쉽게 할당해주는 문법
+        arr = [1,2,3];
+
+       // let first = arr[0];
+        //let second = arr[1];
+        //let third = arr[2];
+
+        //구조분해할당
+        //배열의 순서를 기준으로 값들을 한번에 변수에 할당할 수 있어 
+        //코드가 간결해진다.
+        let[first,second,thrid] = arr;
+
+        document.write('first : ${first}<br>')
+        document.write('first : ${second}<br>')
+        document.write('first : ${third}<br>')
+        
+        let p = {name:'Alice' , age:25};
+
+        //letname = p.name;
+        //let age = p.age;
+
+        //구조분해할당
+
+        let {name,age} = p;
+        document.write('name : ${name}<br>');
+        document.write('age : ${age}<br>');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
