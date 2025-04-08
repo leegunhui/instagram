@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display : flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        #logo {
+            display : flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom : 50px;
+            
+        }
+
+        .id {
+            display : block;
+            align-items: center;
+            justify-content: center;
+            width : 400px;
+            padding : 5px;
+            margin-bottom: 5px;
+        }
+        
+        .pw {
+            display : block;
+            align-items: center;
+            justify-content: center;
+            width : 400px;
+            padding : 5px;
+            margin-bottom: 20px;
+        }
+
+        #login{
+            width : 415px;
+            height : 40px;
+            background-color : indigo;
+            text-align: center;
+            color : white; 
+            font-size : 15px;     
+        }
+
+        
+
+        #env{
+            margin-top : 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id = "background">
+        <div id = "logo">
+            <img src = "http://www.koreastudyroom.com/img/login_logo.jpg">
+        </div>
+
+        <div id = "id">
+            <input type ="text" placeholder="계정" class = "id">
+            <input type ="password" placeholder="비밀번호" class = "pw">
+        </div>
+
+        <div id = "submit">
+            <a href="board.html" > <input type = "submit" value="로그인"  id = "login" >
+            </a>
+        </div>
+
+        <div id = "check">
+            <input type = "checkbox" checked> 자동 로그인
+            <input type = "checkbox" checked> 비밀번호 저장
+        </div>
+
+        <div id = "env">
+            <span>환경설정</span>
+        </div>
+        
+    </div>
+    
+
+
+        
+</body>
+</html>
